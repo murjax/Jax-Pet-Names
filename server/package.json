@@ -7,7 +7,7 @@
   "scripts": {
     "seed": "knex seed:run",
     "migrate": "knex migrate:up",
-    "build": "npm install && knex migrate:up",
+    "build": "npm install && knex migrate:up --env production",
     "server": "node index.js"
   },
   "dependencies": {
