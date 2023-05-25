@@ -8,6 +8,7 @@
     "seed": "knex seed:run",
     "migrate": "knex migrate:up",
     "build": "npm install && knex migrate:up --env production",
+    "reset_build": "npm install && knex migrate:up --env production && knex seed:run --env production",
     "server": "node index.js"
   },
   "dependencies": {
